@@ -8,5 +8,6 @@ else
         pandoc -f html -t plain | \
         #tr '\n' ' ' | \
         #tr '\?\ ' '\?\n' | \
-        grep ^[A-Z].*\?$
+        grep ^[A-Z].*\?$ | \
+        ./qToJSON.js
 fi    
