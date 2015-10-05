@@ -2,7 +2,7 @@
 
 if [ -z "$1" ]; then
     echo "Usage:"
-    echo "condense.sh [url]"
+    echo "questions [url]"
 else
     curl $1 | \
         pandoc -f html -t plain | \
