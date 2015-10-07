@@ -20,7 +20,11 @@ var fs = require('fs');
 
     rl.on('close', function () {
         console.log(questionStore);
-        fs.writeFileSync('./questionStore.json', JSON.stringify(questionStore), 'utf8');
+        fs.writeFileSync(
+            './questionStore.json',
+            JSON.stringify(questionStore, ' ', 2),
+            'utf8'
+        );
     })
 
 }())
