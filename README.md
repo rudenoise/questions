@@ -9,3 +9,4 @@ Would you like to extract lists of questions from web-pages?
 ## Dependencies
 
   * [PanDoc](http://pandoc.org/)
+  * [NodeJS](https://nodejs.org)
